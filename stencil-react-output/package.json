@@ -1,0 +1,26 @@
+{
+  "name": "stencil-react-output",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "tsc -p .",
+    "build": "npm run clean && npm run compile"
+  },
+  "dependencies": {
+    "stencil-project": "file:../stencil-project"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.5",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^4.2.0",
+    "typescript": "^4.9.5"
+  }
+}
