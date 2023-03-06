@@ -23,7 +23,7 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
-  buildEs5: false,
+  buildEs5: 'prod',
   extras: {
     experimentalImportInjection: true,
   },
