@@ -5,7 +5,7 @@ export const config: Config = {
   namespace: 'stencil-project',
   outputTargets: [
     reactOutputTarget({
-      componentCorePackage: 'stencil-library',
+      componentCorePackage: 'stencil-project',
       proxiesFile: '../stencil-react-output/src/components.ts',
     }),
     {
@@ -23,7 +23,7 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
-  buildEs5: 'prod',
+  buildEs5: false,
   extras: {
     experimentalImportInjection: true,
   },
